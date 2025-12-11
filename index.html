@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beacon StarGenerate TV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Beacon StarGenerate TV</h1>
+        <nav>
+            <a href="#">Film</a>
+            <a href="#">Serial</a>
+        </nav>
+    </header>
+
+    <main id="konten-streaming">
+        <h2>Film Unggulan</h2>
+        <div class="konten-kategori" id="film-list-container">
+            </div>
+
+        <h2>Serial Pilihan</h2>
+        <div class="konten-kategori" id="serial-list-container">
+            </div>
+    </main>
+
+    <div id="video-modal" class="modal" data-current-content-id=""> 
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title"></h3>
+            
+            <p id="modal-description" class="keterangan-modal"></p>
+            
+            <div id="episode-selector" style="display: none;">
+                <label for="season-select">Pilih Season:</label>
+                <select id="season-select"></select>
+                
+                <h4 style="margin-top: 20px;">Daftar Episode</h4>
+                <div id="episodes-list">
+                    </div>
+            </div>
+            
+            <video id="player" controls> 
+                <source src="" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Endless For Beacon Corp. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

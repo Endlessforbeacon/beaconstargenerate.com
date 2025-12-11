@@ -1,0 +1,167 @@
+/* Reset CSS Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414; 
+    color: #ffffff;
+
+    /* --- PROPERTI BACKGROUND GAMBAR --- */
+    background-image: url('Image/Endless\ For\ Beacon\ Background\ \(2024\ -\ 2028\).png'); /* PASTIKAN PATH INI SESUAI */
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+header h1 {
+    color: #e50914; 
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(20, 20, 20, 0.7); 
+}
+
+.konten-kategori {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    padding-bottom: 20px;
+}
+
+.film-card {
+    cursor: pointer;
+    flex: 0 0 200px; 
+    background-color: #222222;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.film-card:hover {
+    transform: scale(1.05);
+}
+
+.film-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.film-card h3 {
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* --- Modal CSS --- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.95); 
+}
+
+.modal-content {
+    margin: 5% auto; 
+    padding: 20px;
+    width: 90%; 
+    max-width: 1000px;
+    background-color: #111;
+    border-radius: 8px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1; 
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: white;
+    text-decoration: none;
+}
+
+#modal-title {
+    color: #e50914;
+}
+
+.keterangan-modal {
+    color: #cccccc;
+    font-size: 1.1em;
+    margin: 10px 0 20px 0; 
+    line-height: 1.5;
+}
+
+#player {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    margin-top: 15px;
+}
+
+/* --- Styling Khusus Serial/Episode --- */
+#season-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+}
+
+#episodes-list {
+    margin-top: 10px;
+    max-height: 400px;
+    overflow-y: auto; 
+}
+
+.episode-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.episode-item:hover {
+    background-color: #444444;
+}
